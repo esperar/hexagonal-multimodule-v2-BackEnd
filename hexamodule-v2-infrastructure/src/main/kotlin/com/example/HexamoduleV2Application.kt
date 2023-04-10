@@ -1,11 +1,11 @@
-package hexamodulev2
+package com.example
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class HexamoduleV2Application
+open class HexamoduleV2Application
 
-fun main(args: Array<String>) {
-	runApplication<HexamoduleV2Application>(*args)
+fun main(args: Array<String>){
+    runApplication<HexamoduleV2Application>(*args)
 }
