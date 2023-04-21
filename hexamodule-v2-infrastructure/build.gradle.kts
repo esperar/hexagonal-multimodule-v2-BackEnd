@@ -5,6 +5,10 @@ plugins {
     kotlin("plugin.jpa") version PluginVersions.JPA_PLUGIN_VERSION
 }
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     // impl project
     implementation(project(":hexamodule-v2-persistence"))
