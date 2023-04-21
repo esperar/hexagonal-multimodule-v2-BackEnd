@@ -49,4 +49,5 @@ object Dependencies {
     const val OPEN_FEIGN = "org.springframework.cloud:spring-cloud-starter-openfeign:${DependencyVersions.OPEN_FEIGN_VERSION}"
 
     const val GSON = "com.google.code.gson:gson"
+
 }

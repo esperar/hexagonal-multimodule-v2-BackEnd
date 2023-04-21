@@ -20,6 +20,7 @@ subprojects {
 		implementation(Dependencies.OPEN_FEIGN)
 		implementation(Dependencies.GSON)
 		implementation(Dependencies.JACKSON_TYPE)
+		implementation(Dependencies.JAVA_SERVLET)
 	}
 }
 
