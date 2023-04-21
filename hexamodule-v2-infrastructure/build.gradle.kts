@@ -5,6 +5,10 @@ plugins {
     kotlin("plugin.jpa") version PluginVersions.JPA_PLUGIN_VERSION
 }
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     // impl project
     implementation(project(":hexamodule-v2-persistence"))
@@ -34,11 +38,8 @@ dependencies {
     // open feign
     implementation(Dependencies.OPEN_FEIGN)
 
-    // gson
-    implementation(Dependencies.GSON)
 
-    // jackson
-    implementation(Dependencies.JACKSON_TYPE)
+
 }
 
 

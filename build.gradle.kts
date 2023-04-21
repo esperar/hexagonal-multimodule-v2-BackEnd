@@ -3,6 +3,10 @@ plugins {
 	kotlin("jvm") version PluginVersions.JVM_VERSION
 }
 
+repositories{
+	mavenCentral()
+}
+
 subprojects {
 
 	apply {
@@ -18,8 +22,8 @@ subprojects {
 		implementation(Dependencies.SPRING_AWS)
 		annotationProcessor(Dependencies.CONFIGURATION_PROCESSOR)
 		implementation(Dependencies.OPEN_FEIGN)
-		implementation(Dependencies.GSON)
 		implementation(Dependencies.JACKSON_TYPE)
+		implementation(Dependencies.JAVA_SERVLET)
 	}
 }
 
