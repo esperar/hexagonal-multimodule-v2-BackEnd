@@ -1,6 +1,6 @@
 package com.example.global.error
 
-import common.error.ErrorProperty
+import com.example.common.error.ErrorProperty
 import org.springframework.validation.BindingResult
 
 data class ErrorResponse(

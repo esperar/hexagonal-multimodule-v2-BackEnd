@@ -38,11 +38,7 @@ dependencies {
     // open feign
     implementation(Dependencies.OPEN_FEIGN)
 
-    // gson
-    implementation(Dependencies.GSON)
 
-    // jackson
-    implementation(Dependencies.JACKSON_TYPE)
 
 }
 

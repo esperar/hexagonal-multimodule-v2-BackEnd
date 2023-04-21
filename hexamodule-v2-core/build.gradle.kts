@@ -12,11 +12,12 @@ dependencies {
     implementation(Dependencies.SPRING_TRANSACTION)
 
     // aop
+
     implementation(Dependencies.SPRING_AOP)
 }
 
 allOpen {
-    annotation("common.annotation.UseCase")
-    annotation("common.annotation.ReadOnlyUseCase")
-    annotation("common.annotation.Service")
+    annotation("kotlin.common.annotation.UseCase")
+    annotation("kotlin.common.annotation.ReadOnlyUseCase")
+    annotation("kotlin.common.annotation.Service")
 }

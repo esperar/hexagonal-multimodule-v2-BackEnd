@@ -1,4 +1,4 @@
-package common.error
+package com.example.common.error
 
 abstract class BasicException(
     val errorProperty: ErrorProperty

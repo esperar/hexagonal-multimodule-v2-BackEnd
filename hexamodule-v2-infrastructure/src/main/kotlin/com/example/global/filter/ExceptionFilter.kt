@@ -1,10 +1,10 @@
 package com.example.global.filter
 
-import com.example.global.error.ErrorResponse
 import com.example.global.exception.InternalServerErrorException
 import com.fasterxml.jackson.databind.ObjectMapper
-import common.error.BasicException
-import common.error.ErrorProperty
+import com.example.common.error.BasicException
+import com.example.common.error.ErrorProperty
+import com.example.global.error.ErrorResponse
 import org.slf4j.LoggerFactory
 import org.springframework.http.MediaType
 import org.springframework.web.filter.OncePerRequestFilter

@@ -1,5 +1,7 @@
 package com.example.global.error
 
+import com.example.global.error.ErrorResponse
+import com.example.global.error.ValidationErrorResponse
 import org.springframework.http.HttpStatus
 import org.springframework.validation.BindingResult
 import org.springframework.web.bind.annotation.ExceptionHandler

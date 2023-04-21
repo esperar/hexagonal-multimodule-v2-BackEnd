@@ -12,7 +12,7 @@ object Dependencies {
     const val SPRING_WEB = "org.springframework.boot:spring-boot-starter-web"
 
     // validation
-    const val SPRING_VALIDATION = "org.springframework.boot:spring-boot-starter-validation"
+    const val SPRING_VALIDATION = "org.springframework.boot:spring-boot-starter-validation:${PluginVersions.SPRING_BOOT_VERSION}"
 
     // transaction
     const val SPRING_TRANSACTION = "org.springframework:spring-tx:${DependencyVersions.SPRING_TRANSACTION}"
@@ -27,7 +27,7 @@ object Dependencies {
     const val SPRING_REDIS = "org.springframework.boot:spring-boot-starter-data-redis:${PluginVersions.SPRING_BOOT_VERSION}"
     const val REDIS = "org.springframework.data:spring-data-redis:${DependencyVersions.REDIS_VERSION}"
 
-    const val SPRING_SECURITY = "org.springframework.boot:spring-boot-starter-security"
+    const val SPRING_SECURITY = "org.springframework.boot:spring-boot-starter-security:${PluginVersions.SPRING_BOOT_VERSION}"
 
     const val JWT = "io.jsonwebtoken:jjwt:${DependencyVersions.JWT_VERSION}"
 
@@ -48,6 +48,5 @@ object Dependencies {
 
     const val OPEN_FEIGN = "org.springframework.cloud:spring-cloud-starter-openfeign:${DependencyVersions.OPEN_FEIGN_VERSION}"
 
-    const val GSON = "com.google.code.gson:gson"
 
 }

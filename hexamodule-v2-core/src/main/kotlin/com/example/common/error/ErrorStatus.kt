@@ -1,4 +1,4 @@
-package common.error
+package com.example.common.error
 
 object ErrorStatus {
     const val BAD_REQUEST = 400
