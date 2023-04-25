@@ -20,3 +20,8 @@ spring:
     host: ${REDIS_HOST}
     port: ${REDIS_PORT}
 
+secret:
+  secretKey: ${SECRET_KEY}
+  accessExp: ${ACCESS_EXP}
+  refreshExp: ${REFRESH_EXP}
+
