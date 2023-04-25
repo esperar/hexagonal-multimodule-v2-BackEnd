@@ -24,20 +24,12 @@ dependencies {
     // jwt
     implementation(Dependencies.JWT)
 
-    // aws
-    implementation(Dependencies.AWS_SES)
-    implementation(Dependencies.SPRING_AWS)
-
     // configuration
     annotationProcessor(Dependencies.CONFIGURATION_PROCESSOR)
 
     // excel
     implementation(Dependencies.APACHE_POI)
     implementation(Dependencies.APACHE_POI_OOXML)
-
-    // open feign
-    implementation(Dependencies.OPEN_FEIGN)
-
 
 
 }

@@ -18,10 +18,7 @@ subprojects {
 		implementation(Dependencies.SPRING_VALIDATION)
 		implementation(Dependencies.SPRING_SECURITY)
 		implementation(Dependencies.JWT)
-		implementation(Dependencies.AWS_SES)
-		implementation(Dependencies.SPRING_AWS)
 		annotationProcessor(Dependencies.CONFIGURATION_PROCESSOR)
-		implementation(Dependencies.OPEN_FEIGN)
 		implementation(Dependencies.JACKSON_TYPE)
 		implementation(Dependencies.JAVA_SERVLET)
 	}
