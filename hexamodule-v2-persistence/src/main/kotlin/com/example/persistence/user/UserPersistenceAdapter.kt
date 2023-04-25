@@ -11,14 +11,14 @@ import java.util.*
 @Component
 class UserPersistenceAdapter(
     private val userMapper: UserMapper,
-    private val userJpaRepository: UserJpaRepository
+    private val userRepository: UserJpaRepository
 ) : UserPort {
     override fun queryUserById(userId: UUID): User? = userMapper.toDomain(
-        userJpaRepository.findByIdOrNull(userId)
+        userRepository.findByIdOrNull(userId)
     )
 
     override fun existsUserById(userId: UUID): Boolean =
-        userJpaRepository.existsById(userId)
+        userRepository.existsById(userId)
 
 
 }
