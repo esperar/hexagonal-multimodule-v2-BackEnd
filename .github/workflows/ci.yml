@@ -2,7 +2,7 @@ name: Deploy Device API Server
 on:
   push:
     branches:
-      - main
+      - master
 
 <<<<<<< HEAD
 jobs:
