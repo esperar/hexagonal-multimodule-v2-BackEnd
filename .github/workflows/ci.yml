@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - master
-
-<<<<<<< HEAD
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -49,7 +47,7 @@ jobs:
           region: ap-northeast-2
           deployment_package: ./build/libs/${{env.artifact}}
           wait_for_environment_recovery: 30
-=======
+          
 name: Deploy to cloudtype
 on:
   push:
@@ -96,4 +94,3 @@ jobs:
                 url: git@github.com:${{ github.repository }}.git
                 ref: ${{ github.ref }}
               preset: java-springboot
->>>>>>> a87e79e53ed3f95a71e3696ff97d7198aaac21c6
