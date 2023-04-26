@@ -20,7 +20,7 @@ jobs:
           token: ${{ secrets.CLOUDTYPE_TOKEN }}
           project: s22043/hexamodule
           stage: main
-          yaml: |
+          yaml:
             name: hexagonal-multimodule-v2-backend
             app: java@11
             options:
