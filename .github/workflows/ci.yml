@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 name: Deploy Device API Server
 on:
   push:
@@ -50,8 +47,7 @@ jobs:
           region: ap-northeast-2
           deployment_package: ./build/libs/${{env.artifact}}
           wait_for_environment_recovery: 30
-          
->>>>>>> cf7d51818b3e5489f846175cf3fef8e37c438f0b
+
 name: Deploy to cloudtype
 on:
   push:
@@ -94,13 +90,13 @@ jobs:
                 - name: REDIS_PORT
                   value: ${{ secrets.REDIS_PORT }}
                 - name: REDIS_PASSWORD
-                  value: ${{ secrets.REDIS_PORT }}
+                  value: ${{ secrets.REDIS_PASSWORD }}
                 - name: SECRET_KEY
                   value: ${{ secrets.SECRET_KEY }}
                 - name: ACCESS_EXP
-                      value: ${{ secrets.ACCESS_EXP }}
+                  value: ${{ secrets.ACCESS_EXP }}
                 - name: REFRESH_EXP
-                      value: ${{ secrets.REFRESH_EXP }}
+                  value: ${{ secrets.REFRESH_EXP }}
             context:
               git:
                 url: git@github.com:${{ github.repository }}.git
