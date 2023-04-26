@@ -1,0 +1,55 @@
+name: Deploy to cloudtype
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Connect deploy key
+        uses: cloudtype-github-actions/connect@v1
+        with:
+          token: ${{ secrets.CLOUDTYPE_TOKEN }}
+          ghtoken: ${{ secrets.GHP_TOKEN }}
+      - name: Deploy
+        uses: cloudtype-github-actions/deploy@v1
+        with:
+          token: ${{ secrets.CLOUDTYPE_TOKEN }}
+          project: s22043/hexamodule
+          stage: main
+          yaml: >
+            name: hexagonal-multimodule-v2-backend
+            app: java@11
+            options:
+              ports: 8080
+              env:
+                - name: DB_URL
+                  value: ${{ secrets.DB_URL }}
+                - name: DB_NAME
+                  value: ${{ secrets.DB_NAME }}
+                - name: DB_USER
+                  value: ${{ secrets.DB_USER }}
+                - name: DB_PASSWORD
+                  value: ${{ secrets.DB_PASSWORD }}
+                - name: REDIS_HOST
+                  value: ${{ secrets.REDIS_HOST }}
+                - name: REDIS_PORT
+                  value: ${{ secrets.REDIS_PORT }}
+                - name: REDIS_PASSWORD
+                  value: ${{ secrets.REDIS_PASSWORD }}
+                - name: SECRET_KEY
+                  value: ${{ secrets.SECRET_KEY }}
+                - name: ACCESS_EXP
+                  value: ${{ secrets.ACCESS_EXP }}
+                - name: REFRESH_EXP
+                  value: ${{ secrets.REFRESH_EXP' }}
+            
+            context:
+              git:
+                url: git@github.com:${{ github.repository }}.git
+                ref: ${{ github.ref }}
+              preset: java-springboot
