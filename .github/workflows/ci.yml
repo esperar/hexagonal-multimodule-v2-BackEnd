@@ -1,4 +1,4 @@
-ame: Deploy to cloudtype
+name: Deploy to cloudtype
 on:
   push:
     branches:
