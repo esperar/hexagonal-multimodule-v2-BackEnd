@@ -10,5 +10,4 @@ import org.springframework.context.annotation.Configuration
     ]
 )
 @Configuration
-class PropertiesScanConfig {
-}
+class PropertiesScanConfig
