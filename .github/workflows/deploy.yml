@@ -46,7 +46,7 @@ jobs:
                 - name: ACCESS_EXP
                   value: ${{ secrets.ACCESS_EXP }}
                 - name: REFRESH_EXP
-                  value: ${{ secrets.REFRESH_EXP' }}
+                  value: ${{ secrets.REFRESH_EXP }}
             
             context:
               git:
